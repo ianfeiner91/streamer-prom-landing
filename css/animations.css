@@ -1,0 +1,192 @@
+/* ============================================
+   ANIMATIONS — Streamer Prom
+   ============================================ */
+
+/* ---- PRELOADER ---- */
+@keyframes disco-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes preloader-fill {
+  0%   { width: 0%; }
+  50%  { width: 70%; }
+  100% { width: 100%; }
+}
+@keyframes preloader-shine {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ---- HOLOGRAPHIC CHROME ---- */
+@keyframes holo-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+/* ---- HERO GRID DRIFT ---- */
+@keyframes grid-drift {
+  0%   { background-position: 0 0; }
+  100% { background-position: 70px 70px; }
+}
+
+/* ---- HERO BEAM SWAY ---- */
+@keyframes beam-sway {
+  0%, 100% { transform: rotate(15deg); opacity: 0.4; }
+  50%      { transform: rotate(8deg);  opacity: 0.6; }
+}
+
+/* ---- DISCO BALL FLOAT ---- */
+@keyframes disco-float {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-18px); }
+}
+
+/* ---- HERO SCROLL INDICATOR ---- */
+@keyframes scroll-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scaleY(0.5);
+    transform-origin: top;
+  }
+}
+
+/* ---- MARQUEE SCROLL ---- */
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ---- FLOATING PARTICLES (confetti / champagne bubbles) ---- */
+@keyframes particle-float {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    transform: translate(var(--tx), var(--ty)) rotate(360deg);
+    opacity: 0;
+  }
+}
+.particle {
+  position: absolute;
+  pointer-events: none;
+  animation: particle-float var(--duration) var(--delay) ease-in-out infinite;
+}
+.particle--circle {
+  border-radius: 50%;
+}
+.particle--star {
+  background: none !important;
+}
+
+/* ---- SHIMMER SWEEP ---- */
+@keyframes shimmer-sweep {
+  0%   { left: -100%; }
+  100% { left: 200%; }
+}
+@keyframes shimmer-line {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* ---- COUNT UP ---- */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- GLOW PULSE ---- */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px var(--gold-glow); }
+  50%      { box-shadow: 0 0 40px var(--gold-glow), 0 0 80px rgba(230, 194, 112, 0.15); }
+}
+
+/* ---- DIVIDER PULSE ---- */
+@keyframes divider-pulse {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px var(--gold-glow));
+  }
+  50% {
+    opacity: 0.6;
+    filter: drop-shadow(0 0 20px var(--gold-glow));
+  }
+}
+
+/* ---- TWINKLE STARS ---- */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50%      { opacity: 1;   transform: scale(1.1); }
+}
+.twinkle {
+  animation: twinkle var(--twinkle-duration, 3s) ease-in-out infinite;
+  animation-delay: var(--twinkle-delay, 0s);
+}
+
+/* ---- POLAROID DROP ---- */
+@keyframes polaroid-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---- BAR GROW ---- */
+@keyframes bar-grow {
+  from { height: 0; }
+}
+
+/* ---- HOVER LIFT ---- */
+.hover-lift {
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ---- CONFETTI FALL ---- */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* ---- TEXT REVEAL UP ---- */
+@keyframes text-reveal-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ---- HERO TITLE PROM PULSE ---- */
+@keyframes prom-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.15));
+  }
+  50% {
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.3));
+  }
+}
+.text--holo.hero__title-prom {
+  animation: holo-shift 8s ease-in-out infinite, prom-pulse 4s ease-in-out infinite;
+}

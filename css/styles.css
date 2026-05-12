@@ -1,0 +1,324 @@
+/* ============================================
+   STREAMER PROM — BASE STYLES
+   Prom-glam meets holographic chrome
+   ============================================ */
+
+:root {
+  /* Core dark palette — late-night ballroom */
+  --void:        #050308;
+  --black:       #07050c;
+  --midnight:    #0c0814;
+  --charcoal:    #14101e;
+  --slate:       #1c1729;
+  --gray-dark:   #2a2440;
+  --gray-mid:    #3f3856;
+  --gray-light:  #8a83a3;
+  --off-white:   #efe8d8;
+  --white:       #f8f3e8;
+  --cream:       #f6efe0;
+
+  /* Prom palette — champagne, hot pink, burgundy */
+  --gold:           #e6c270;
+  --gold-bright:    #f7da8b;
+  --gold-deep:      #b88e2f;
+  --champagne:      #efdfb8;
+  --gold-glow:      rgba(230, 194, 112, 0.4);
+  --gold-subtle:    rgba(230, 194, 112, 0.08);
+
+  --pink:           #ff3b8a;
+  --pink-bright:    #ff6da7;
+  --pink-glow:      rgba(255, 59, 138, 0.35);
+  --pink-subtle:    rgba(255, 59, 138, 0.08);
+
+  --burgundy:       #4a0a1f;
+  --wine:           #7a1230;
+  --wine-glow:      rgba(122, 18, 48, 0.4);
+
+  --teal:           #2dd4bf;
+  --twitch:         #9146ff;
+  --twitch-glow:    rgba(145, 70, 255, 0.4);
+
+  /* Holographic chrome — for the iridescent flex */
+  --iri-1:  #ff3b8a;
+  --iri-2:  #ffbe0b;
+  --iri-3:  #fb8c00;
+  --iri-4:  #b388ff;
+  --iri-5:  #4cc9f0;
+  --iri-6:  #06ffa5;
+
+  /* Typography */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body:    'Barlow', sans-serif;
+  --font-script:  'Pinyon Script', cursive;
+
+  /* Spacing */
+  --section-pad:   clamp(5rem, 10vw, 8rem);
+  --container-max: 1240px;
+  --gap:           clamp(1rem, 2vw, 2rem);
+
+  /* Transitions */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 1vw, 1.05rem);
+  line-height: 1.7;
+  color: var(--off-white);
+  background: var(--void);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+@media (hover: none) {
+  body { cursor: auto; }
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: none;
+}
+a:hover { color: var(--white); }
+
+img { max-width: 100%; display: block; }
+
+::selection {
+  background: var(--pink);
+  color: var(--black);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--void); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--gold-deep), var(--gold));
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--gold-bright); }
+
+/* Sections */
+.section {
+  padding: var(--section-pad) 0;
+  position: relative;
+  overflow: hidden;
+}
+.section--dark   { background: var(--midnight); }
+.section--darker { background: var(--black); }
+.section--wine   { background: linear-gradient(180deg, var(--black) 0%, var(--burgundy) 100%); }
+.section--charcoal { background: var(--charcoal); }
+
+.section__noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: clamp(3rem, 5vw, 4.5rem);
+  position: relative;
+  z-index: 2;
+}
+
+.section__eyebrow {
+  font-family: var(--font-body);
+  font-size: clamp(0.65rem, 0.9vw, 0.8rem);
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.section__eyebrow::before,
+.section__eyebrow::after {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+.section__eyebrow::after {
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.section__title {
+  font-size: clamp(2.5rem, 5.5vw, 5rem);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+.section__subtitle {
+  font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+  color: var(--gray-light);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.text--gold   { color: var(--gold); }
+.text--pink   { color: var(--pink); }
+.text--script { font-family: var(--font-script); font-weight: 400; letter-spacing: 0; text-transform: none; }
+
+/* HOLOGRAPHIC CHROME TEXT — the prom glam treatment */
+.text--holo {
+  background: linear-gradient(
+    115deg,
+    var(--iri-1) 0%,
+    var(--iri-2) 16%,
+    var(--iri-3) 32%,
+    var(--iri-4) 50%,
+    var(--iri-5) 66%,
+    var(--iri-6) 82%,
+    var(--iri-1) 100%
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: holo-shift 8s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.15));
+}
+
+/* GOLD FOIL TEXT — for prom invitation feel */
+.text--foil {
+  background: linear-gradient(
+    180deg,
+    #fff3c4 0%,
+    #f7da8b 20%,
+    #d9a84c 45%,
+    #b88e2f 60%,
+    #e6c270 80%,
+    #f7da8b 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(184, 142, 47, 0.4));
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.95em 2.4em;
+  border: 2px solid transparent;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: all 0.3s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+  white-space: nowrap;
+}
+.btn__bg {
+  position: absolute;
+  inset: 0;
+  background: var(--white);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.45s var(--ease-out);
+  z-index: 0;
+}
+.btn:hover .btn__bg {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btn span { position: relative; z-index: 1; }
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-deep) 100%);
+  color: var(--black);
+  border-color: var(--gold);
+  box-shadow: 0 4px 20px rgba(230, 194, 112, 0.3);
+}
+.btn--primary:hover {
+  color: var(--black);
+  box-shadow: 0 8px 28px rgba(230, 194, 112, 0.45);
+}
+
+.btn--pink {
+  background: linear-gradient(135deg, var(--pink-bright) 0%, var(--pink) 50%, #c01e60 100%);
+  color: var(--white);
+  border-color: var(--pink);
+  box-shadow: 0 4px 20px var(--pink-glow);
+}
+.btn--pink:hover {
+  color: var(--black);
+  box-shadow: 0 8px 28px var(--pink-glow);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.btn--ghost:hover {
+  color: var(--black);
+  border-color: var(--white);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--gold);
+  border-color: rgba(230, 194, 112, 0.4);
+}
+.btn--outline:hover {
+  color: var(--black);
+  border-color: var(--gold);
+}
+
+.btn--large {
+  padding: 1.15em 3em;
+  font-size: clamp(1.1rem, 1.4vw, 1.3rem);
+}
+
+/* Reveal animation hook */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal--delay-1 { transition-delay: 0.1s; }
+.reveal--delay-2 { transition-delay: 0.2s; }
+.reveal--delay-3 { transition-delay: 0.3s; }
+.reveal--delay-4 { transition-delay: 0.4s; }
+.reveal--delay-5 { transition-delay: 0.5s; }
+.reveal--delay-6 { transition-delay: 0.6s; }

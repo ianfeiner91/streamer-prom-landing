@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streamer Prom 2026 — FunnyMike × Fixated</title>
+  <meta name="description" content="The night that broke the internet is back. FunnyMike's Streamer Prom returns July 17, 2026 — live on Twitch with 100+ top-tier creators and 1M+ expected concurrent viewers.">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Streamer Prom 2026 — FunnyMike × Fixated">
+  <meta property="og:description" content="The night that broke the internet, round two. July 17, 2026.">
+  <meta property="og:image" content="images/poster.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Streamer Prom 2026 — FunnyMike × Fixated">
+  <meta name="twitter:description" content="The night that broke the internet, round two. July 17, 2026.">
+  <meta name="twitter:image" content="images/poster.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Bebas+Neue&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- PRELOADER                                     -->
+  <!-- ============================================ -->
+  <div id="preloader" class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__disco">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <radialGradient id="ploadGrad" cx="35%" cy="30%">
+              <stop offset="0%" stop-color="#fff3c4"/>
+              <stop offset="50%" stop-color="#e6c270"/>
+              <stop offset="100%" stop-color="#7a1230"/>
+            </radialGradient>
+          </defs>
+          <circle cx="50" cy="50" r="42" fill="url(#ploadGrad)"/>
+          <g stroke="rgba(7,5,12,0.4)" stroke-width="0.7" fill="none">
+            <ellipse cx="50" cy="50" rx="42" ry="14"/>
+            <ellipse cx="50" cy="50" rx="42" ry="28"/>
+            <ellipse cx="50" cy="50" rx="14" ry="42"/>
+            <ellipse cx="50" cy="50" rx="28" ry="42"/>
+            <line x1="8" y1="50" x2="92" y2="50"/>
+            <line x1="50" y1="8" x2="50" y2="92"/>
+          </g>
+          <circle cx="35" cy="35" r="4" fill="#fff3c4" opacity="0.9"/>
+          <circle cx="62" cy="40" r="3" fill="#fff3c4" opacity="0.7"/>
+          <circle cx="42" cy="62" r="2.5" fill="#fff3c4" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="preloader__text">STREAMER PROM</div>
+      <div class="preloader__bar">
+        <div class="preloader__bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- CUSTOM CURSOR (DISCO BALL)                    -->
+  <!-- ============================================ -->
+  <div id="custom-cursor" class="custom-cursor">
+    <svg viewBox="0 0 40 40" class="cursor-ball">
+      <defs>
+        <radialGradient id="cursorGrad" cx="35%" cy="30%">
+          <stop offset="0%" stop-color="#fff3c4"/>
+          <stop offset="50%" stop-color="#e6c270"/>
+          <stop offset="100%" stop-color="#b88e2f"/>
+        </radialGradient>
+      </defs>
+      <circle cx="20" cy="20" r="16" fill="url(#cursorGrad)"/>
+      <g stroke="rgba(7,5,12,0.5)" stroke-width="0.5" fill="none">
+        <ellipse cx="20" cy="20" rx="16" ry="5"/>
+        <ellipse cx="20" cy="20" rx="16" ry="10"/>
+        <ellipse cx="20" cy="20" rx="5" ry="16"/>
+        <ellipse cx="20" cy="20" rx="10" ry="16"/>
+      </g>
+      <circle cx="14" cy="14" r="1.5" fill="#fff3c4"/>
+      <circle cx="25" cy="16" r="1" fill="#fff3c4" opacity="0.7"/>
+    </svg>
+  </div>
+  <div id="cursor-trail" class="cursor-trail"></div>
+
+  <!-- ============================================ -->
+  <!-- NAVIGATION                                    -->
+  <!-- ============================================ -->
+  <nav id="navbar" class="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-icon">SP</span>
+        <span class="nav__logo-text">STREAMER PROM</span>
+      </a>
+      <div class="nav__links">
+        <a href="#about" class="nav__link">The Event</a>
+        <a href="#stats" class="nav__link">2025 Recap</a>
+        <a href="#amplification" class="nav__link">Reach</a>
+        <a href="#host" class="nav__link">Host</a>
+        <a href="#sponsorship" class="nav__link">Partner</a>
+        <a href="mailto:if@fixated.com?cc=dk@fixated.com&subject=Streamer%20Prom%202026%20Partnership" class="nav__link nav__link--cta">Become a Sponsor</a>
+      </div>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu__inner">
+      <a href="#about" class="mobile-menu__link">The Event</a>
+      <a href="#stats" class="mobile-menu__link">2025 Recap</a>
+      <a href="#amplification" class="mobile-menu__link">Reach</a>
+      <a href="#host" class="mobile-menu__link">Host</a>
+      <a href="#sponsorship" class="mobile-menu__link">Partner</a>
+      <a href="mailto:if@fixated.com?cc=dk@fixated.com&subject=Streamer%20Prom%202026%20Partnership" class="mobile-menu__link mobile-menu__link--cta">Become a Sponsor</a>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- HERO                                          -->
+  <!-- ============================================ -->
+  <section id="hero" class="hero">
+    <div class="hero__spotlight"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__beam hero__beam--left"></div>
+    <div class="hero__beam hero__beam--right"></div>
+    <div class="hero__particles" id="hero-particles"></div>
+
+    <!-- Floating disco ball -->
+    <div class="hero__disco" aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <defs>
+          <radialGradient id="heroDiscoGrad" cx="35%" cy="30%">
+            <stop offset="0%" stop-color="#fff3c4"/>
+            <stop offset="50%" stop-color="#e6c270"/>
+            <stop offset="100%" stop-color="#7a1230"/>
+          </radialGradient>
+        </defs>
+        <circle cx="50" cy="50" r="42" fill="url(#heroDiscoGrad)"/>
+        <g stroke="rgba(7,5,12,0.45)" stroke-width="0.7" fill="none">
+          <ellipse cx="50" cy="50" rx="42" ry="14"/>
+          <ellipse cx="50" cy="50" rx="42" ry="28"/>
+          <ellipse cx="50" cy="50" rx="14" ry="42"/>
+          <ellipse cx="50" cy="50" rx="28" ry="42"/>
+          <line x1="8" y1="50" x2="92" y2="50"/>
+          <line x1="50" y1="8" x2="50" y2="92"/>
+        </g>
+        <circle cx="35" cy="35" r="4" fill="#fff3c4" opacity="0.9"/>
+        <circle cx="62" cy="40" r="3" fill="#fff3c4" opacity="0.7"/>
+        <circle cx="42" cy="62" r="2.5" fill="#fff3c4" opacity="0.6"/>
+        <line x1="50" y1="2" x2="50" y2="-10" stroke="rgba(230,194,112,0.5)" stroke-width="0.8"/>
+      </svg>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span class="hero__eyebrow-line"></span>
+        <span>FunnyMike <span class="hero__eyebrow-star">★</span> Fixated Present</span>
+        <span class="hero__eyebrow-line"></span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__year reveal reveal--delay-1">2026</span>
+        <span class="hero__title-line reveal reveal--delay-1">STREAMER</span>
+        <span class="hero__title-line hero__title-prom text--holo reveal reveal--delay-2">PROM</span>
+        <span class="hero__script reveal reveal--delay-3">round two</span>
+      </h1>
+
+      <p class="hero__tagline reveal reveal--delay-4">
+        The night that <strong>broke the internet</strong> is back.<br>
+        July 17, 2026 — live on Twitch, with <strong>100+ top-tier creators</strong> walking the carpet.
+      </p>
+
+      <div class="hero__badges reveal reveal--delay-5">
+        <span class="hero__badge">JULY 17, 2026</span>
+        <span class="hero__badge">LIVE ON TWITCH</span>
+        <span class="hero__badge hero__badge--pink">1M+ CCV EXPECTED</span>
+        <span class="hero__badge">100+ CREATORS</span>
+      </div>
+
+      <div class="hero__cta reveal reveal--delay-5">
+        <a href="mailto:if@fixated.com?cc=dk@fixated.com&subject=Streamer%20Prom%202026%20Partnership" class="btn btn--primary">
+          <span class="btn__bg"></span>
+          <span>Become a Sponsor</span>
+        </a>
+        <a href="#gallery" class="btn btn--ghost">
+          <span class="btn__bg"></span>
+          <span>Watch The Recap</span>
+        </a>
+      </div>
+
+      <div class="hero__metrics reveal reveal--delay-6">
+        <div class="hero__metric">
+          <span class="hero__metric-num">5.59M+</span>
+          <span class="hero__metric-label">'25 Live Views</span>
+        </div>
+        <div class="hero__metric">
+          <span class="hero__metric-num">218K+</span>
+          <span class="hero__metric-label">Peak Concurrent</span>
+        </div>
+        <div class="hero__metric">
+          <span class="hero__metric-num">123M+</span>
+          <span class="hero__metric-label">Total Reach</span>
+        </div>
+        <div class="hero__metric">
+          <span class="hero__metric-num">#1</span>
+          <span class="hero__metric-label">Trending On X</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MARQUEE                                       -->
+  <!-- ============================================ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Streamer Prom 2026 <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <span class="marquee__item">July 17 <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <span class="marquee__item">Live on Twitch <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <span class="marquee__item">100+ Creators <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <span class="marquee__item">Hosted By FunnyMike <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee__item">Streamer Prom 2026 <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <span class="marquee__item">July 17 <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <span class="marquee__item">Live on Twitch <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <span class="marquee__item">100+ Creators <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+      <span class="marquee__item">Hosted By FunnyMike <svg class="marquee__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.9l-6.2 4.4 2.4-7.4L2 9.4h7.6z"/></svg></span>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- ABOUT — WHY THIS EVENT                        -->
+  <!-- ============================================ -->
+  <section id="about" class="section section--dark about">
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">WHY STREAMER PROM</span>
+        <h2 class="section__title">Not Just An Event.<br><span class="text--script text--pink">a cultural moment.</span></h2>
+        <p class="section__subtitle">A nostalgia-driven prom experience built for the streaming generation — where the biggest creators on the internet walk the orange carpet, crown a king and queen, and turn their fanbases into your audience.</p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__card reveal">
+          <span class="about__card-num">01</span>
+          <div class="about__card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M24 8a8 8 0 100 16 8 8 0 000-16zM10 42c0-7.7 6.3-14 14-14s14 6.3 14 14" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="about__card-title">Hosted by FunnyMike</h3>
+          <p class="about__card-text">A creator with a combined <strong>29M+ following</strong> across YouTube, TikTok, Instagram, and Twitch. The face of the streamer prom era.</p>
+        </div>
+
+        <div class="about__card reveal reveal--delay-1">
+          <span class="about__card-num">02</span>
+          <div class="about__card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 4l3.5 7L35 12.5l-5.5 5.5 1.3 7.5L24 22l-6.8 3.5 1.3-7.5L13 12.5 20.5 11z"/>
+              <path d="M14 30l-4 8M34 30l4 8M19 36l-3 8M29 36l3 8"/>
+            </svg>
+          </div>
+          <h3 class="about__card-title">Elite Creator Roster</h3>
+          <p class="about__card-text">100+ top-tier creators from Streamer University and beyond. The most followed, most clipped, most-on-FYP names of the moment, all in one room.</p>
+        </div>
+
+        <div class="about__card reveal reveal--delay-2">
+          <span class="about__card-num">03</span>
+          <div class="about__card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M6 24h36M24 6c5 5 8 11 8 18s-3 13-8 18M24 6c-5 5-8 11-8 18s3 13 8 18"/>
+            </svg>
+          </div>
+          <h3 class="about__card-title">Multi-Platform Amplification</h3>
+          <p class="about__card-text">19+ creators streaming the event simultaneously last year. <strong>28.4M combined views</strong>. Your brand doesn't appear once — it appears everywhere, all at once.</p>
+        </div>
+
+        <div class="about__card reveal reveal--delay-3">
+          <span class="about__card-num">04</span>
+          <div class="about__card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 6l4.5 12 12 1-9 9 2.5 13L24 35l-10 6 2.5-13-9-9 12-1z"/>
+            </svg>
+          </div>
+          <h3 class="about__card-title">Embedded in Culture</h3>
+          <p class="about__card-text">Prom King &amp; Queen voting. Sashes. Crowns. Sponsored segments. This is brand integration that lives inside the most-clipped moments of the year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider" aria-hidden="true">
+    <div class="divider__inner">
+      <div class="divider__line"></div>
+      <svg class="divider__icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16 2l3.2 9.8h10.3l-8.3 6 3.2 9.8L16 21.7 7.6 27.6l3.2-9.8-8.3-6h10.3z"/></svg>
+      <div class="divider__line"></div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- STATS — 2025 NUMBERS                          -->
+  <!-- ============================================ -->
+  <section id="stats" class="section section--darker stats">
+    <div class="section__noise"></div>
+    <div class="stats__texture"></div>
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Streamer Prom 2025</span>
+        <h2 class="section__title">The Numbers That<br><span class="text--foil">Broke The Internet</span></h2>
+        <p class="section__subtitle">When 19+ top creators stream the same event on the same night, the receipts speak for themselves. From FunnyMike's channel alone:</p>
+      </div>
+
+      <div class="stats__grid">
+        <div class="stat-card reveal">
+          <div class="stat-card__number" data-target="5.59" data-suffix="M+">0</div>
+          <div class="stat-card__label">Total Live Views</div>
+          <div class="stat-card__source">FunnyMike Channel</div>
+        </div>
+        <div class="stat-card reveal reveal--delay-1">
+          <div class="stat-card__number" data-target="218" data-suffix="K+">0</div>
+          <div class="stat-card__label">Peak Concurrent</div>
+          <div class="stat-card__source">FunnyMike Channel</div>
+        </div>
+        <div class="stat-card reveal reveal--delay-2">
+          <div class="stat-card__number" data-target="4.9" data-suffix="M+">0</div>
+          <div class="stat-card__label">Total Watch Hours</div>
+          <div class="stat-card__source">FunnyMike Channel</div>
+        </div>
+        <div class="stat-card reveal reveal--delay-3">
+          <div class="stat-card__number" data-target="69" data-suffix="K+">0</div>
+          <div class="stat-card__label">New Twitch Followers</div>
+          <div class="stat-card__source">FunnyMike Channel</div>
+        </div>
+        <div class="stat-card reveal reveal--delay-4">
+          <div class="stat-card__number" data-target="130" data-suffix="+">0</div>
+          <div class="stat-card__label">Live Stream Hours</div>
+          <div class="stat-card__source">Across All Creators</div>
+        </div>
+      </div>
+
+      <div class="stats__big-number reveal">
+        <div class="stats__big-num-value text--foil">123M+</div>
+        <div class="stats__big-num-label">
+          <h3>Total Reach In 48 Hours</h3>
+          <p>Reposts, clip channels, and creator share-outs pushed Streamer Prom past <strong>123 million impressions</strong> in the 48 hours after the broadcast went dark. Number one trending event on X. Most-engaged Popeyes post in their company history.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- GALLERY — RECAP VIDEO + POLAROIDS             -->
+  <!-- ============================================ -->
+  <section id="gallery" class="section section--dark gallery">
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="gallery__intro">
+        <div class="gallery__intro-text reveal">
+          <span class="section__eyebrow">The 2025 Recap</span>
+          <h2>Relive The<br><span class="text--script text--pink">night.</span></h2>
+          <p>The orange carpet. The fits. The dance floor. The chaos. Last year's prom was an internet-wide moment — and 2026 is going to make it look small.</p>
+          <a href="https://www.instagram.com/p/DLGetVquktu/" target="_blank" rel="noopener" class="btn btn--outline">
+            <span class="btn__bg"></span>
+            <span>Watch on Instagram</span>
+          </a>
+        </div>
+        <div class="reveal reveal--delay-2">
+          <div class="iphone-frame">
+            <div class="iphone-frame__notch"><div class="iphone-frame__camera"></div></div>
+            <div class="iphone-frame__screen">
+              <video class="iphone-frame__video" id="recap-video" src="images/recap.mp4" playsinline muted loop preload="metadata"></video>
+              <button class="iphone-frame__play-btn" id="recap-play-btn" aria-label="Play recap">
+                <div class="play-circle">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="#07050c"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </button>
+            </div>
+            <div class="iphone-frame__home-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__collage">
+        <div class="polaroid reveal">
+          <div class="polaroid__tape"></div>
+          <img src="images/poster.jpg" alt="Streamer Prom 2025 poster" class="polaroid__img" loading="lazy">
+          <div class="polaroid__caption">'25 official poster</div>
+        </div>
+        <div class="polaroid reveal reveal--delay-1">
+          <div class="polaroid__tape"></div>
+          <img src="images/photo-1.jpg" alt="Streamer Prom 2025 orange carpet" class="polaroid__img" loading="lazy">
+          <div class="polaroid__caption">orange carpet ready</div>
+        </div>
+        <div class="polaroid reveal reveal--delay-2">
+          <div class="polaroid__tape"></div>
+          <img src="images/photo-3.jpg" alt="Creators on the red carpet" class="polaroid__img" loading="lazy">
+          <div class="polaroid__caption">on the carpet</div>
+        </div>
+        <div class="polaroid reveal reveal--delay-3">
+          <div class="polaroid__tape"></div>
+          <img src="images/photo-4.jpg" alt="Chrisean Rock at Streamer Prom" class="polaroid__img" loading="lazy">
+          <div class="polaroid__caption">chrisean &amp; co</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- AMPLIFICATION — TWITCH CHART                  -->
+  <!-- ============================================ -->
+  <section id="amplification" class="section section--charcoal amp">
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="amp__intro reveal">
+        <span class="section__eyebrow">The Multi-Stream Effect</span>
+        <h2 class="section__title">One Event.<br><span class="text--foil">Nineteen Streams.</span></h2>
+        <p class="section__subtitle">Every attending creator goes live. Every fanbase tunes in. Every brand integration plays out simultaneously across nineteen+ channels — the math compounds fast.</p>
+      </div>
+
+      <div class="amp__big">
+        <div class="amp-stat reveal">
+          <span class="amp-stat__num" data-target="28.4" data-suffix="M+">0</span>
+          <span class="amp-stat__label">Combined Live Views</span>
+        </div>
+        <div class="amp-stat reveal reveal--delay-1">
+          <span class="amp-stat__num" data-target="4.5" data-suffix="M+">0</span>
+          <span class="amp-stat__label">Watch Hours</span>
+        </div>
+        <div class="amp-stat reveal reveal--delay-2">
+          <span class="amp-stat__num" data-target="601.6" data-suffix="K+">0</span>
+          <span class="amp-stat__label">Peak Concurrent</span>
+        </div>
+        <div class="amp-stat reveal reveal--delay-3">
+          <span class="amp-stat__num" data-target="250.6" data-suffix="K+">0</span>
+          <span class="amp-stat__label">New Followers Gained</span>
+        </div>
+        <div class="amp-stat reveal reveal--delay-4">
+          <span class="amp-stat__num" data-target="19" data-suffix="+">0</span>
+          <span class="amp-stat__label">Creator Livestreams</span>
+        </div>
+      </div>
+
+      <div class="amp__chart reveal">
+        <div class="amp__chart-header">
+          <div>
+            <span class="amp__chart-subtitle">Twitch channels covering the event</span>
+            <h3 class="amp__chart-title">Peak Viewers Per Channel</h3>
+          </div>
+          <div class="amp__chart-legend">
+            <span class="amp__chart-legend-dot"></span>
+            <span>Peak CCV</span>
+          </div>
+        </div>
+
+        <div class="amp__bars" id="amp-bars">
+          <div class="amp-bar"><div class="amp-bar__col" data-height="100" data-value="218K"></div><div class="amp-bar__cap"><span class="amp-bar__label">funnymike</span><span class="amp-bar__date">19 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="57" data-value="124K"></div><div class="amp-bar__cap"><span class="amp-bar__label">jasontheween</span><span class="amp-bar__date">18 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="50" data-value="109K"></div><div class="amp-bar__cap"><span class="amp-bar__label">DDG</span><span class="amp-bar__date">18 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="37" data-value="81K"></div><div class="amp-bar__cap"><span class="amp-bar__label">wendolynortizz</span><span class="amp-bar__date">18 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="22" data-value="48K"></div><div class="amp-bar__cap"><span class="amp-bar__label">ExtraEmily</span><span class="amp-bar__date">18 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="21.5" data-value="47K"></div><div class="amp-bar__cap"><span class="amp-bar__label">2xRaKai</span><span class="amp-bar__date">19 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="20.5" data-value="45K"></div><div class="amp-bar__cap"><span class="amp-bar__label">Lacy</span><span class="amp-bar__date">18 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="17.5" data-value="38K"></div><div class="amp-bar__cap"><span class="amp-bar__label">sakurashymko</span><span class="amp-bar__date">18 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="16.5" data-value="36K"></div><div class="amp-bar__cap"><span class="amp-bar__label">Kaysan</span><span class="amp-bar__date">19 Jun</span></div></div>
+          <div class="amp-bar"><div class="amp-bar__col" data-height="15.5" data-value="34K"></div><div class="amp-bar__cap"><span class="amp-bar__label">Marlon</span><span class="amp-bar__date">18 Jun</span></div></div>
+        </div>
+
+        <p class="amp__footnote">Top 10 of 19+ creator channels co-streaming Streamer Prom 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- HOST — FUNNY MIKE                             -->
+  <!-- ============================================ -->
+  <section id="host" class="section section--dark host">
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Your Host</span>
+        <h2 class="section__title">The Face Of<br><span class="text--foil">Streamer Prom</span></h2>
+      </div>
+
+      <div class="host__card reveal">
+        <div class="host__photo">
+          <img src="images/funnymike.jpg" alt="FunnyMike at Streamer Prom 2025" class="host__photo-img">
+          <span class="host__photo-overlay">— ringmaster of round two</span>
+        </div>
+        <div class="host__body">
+          <div class="host__label">Hosted by</div>
+          <h3 class="host__name">FunnyMike</h3>
+          <a href="https://beacons.ai/management/fixated/mediakit/funnymike_" target="_blank" rel="noopener" class="host__handle">@funnymike</a>
+          <p class="host__bio">Comedian, rapper, content empire. FunnyMike's signature blend of unfiltered humor, music, and IRL chaos has made him one of the most-watched creators in the country — and the only person who could pull off Streamer Prom. He invented it. He's bringing it back bigger.</p>
+
+          <div class="host__totals">
+            <span class="host__totals-label">Combined Audience</span>
+            <span class="host__totals-num">29M+</span>
+          </div>
+
+          <div class="host__platforms">
+            <div class="host-platform">
+              <span class="host-platform__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.6 12 3.6 12 3.6s-7.6 0-9.4.5A3 3 0 00.5 6.2C0 8 0 12 0 12s0 4 .5 5.8a3 3 0 002.1 2.1c1.8.5 9.4.5 9.4.5s7.6 0 9.4-.5a3 3 0 002.1-2.1c.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+              </span>
+              <div>
+                <span class="host-platform__num">13.7M+</span>
+                <span class="host-platform__name">YouTube</span>
+              </div>
+            </div>
+            <div class="host-platform">
+              <span class="host-platform__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19.6 6.3a4.8 4.8 0 01-3.2-1.4 4.8 4.8 0 01-1.4-3.1h-3v13a2.7 2.7 0 11-2.7-2.7c.3 0 .5 0 .8.1V9.2a5.7 5.7 0 105.8 5.7V9a8 8 0 003.7.9V6.3z"/></svg>
+              </span>
+              <div>
+                <span class="host-platform__num">6M+</span>
+                <span class="host-platform__name">TikTok</span>
+              </div>
+            </div>
+            <div class="host-platform">
+              <span class="host-platform__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2a3.7 3.7 0 01-.9 1.4c-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9a3.7 3.7 0 01-.9-1.4c-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zM12 0c-3.3 0-3.7 0-5 .1S4.8.3 4 .6c-.9.3-1.6.8-2.3 1.5C1 2.8.5 3.5.2 4.4-.1 5.2-.3 6.2-.3 7.5-.4 8.8-.4 9.2-.4 12.5s0 3.7.1 5C-.2 18.8 0 19.8.3 20.6c.3.9.8 1.6 1.5 2.3.7.7 1.4 1.2 2.3 1.5.8.3 1.8.5 3.1.6 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.3-.3 3.1-.6.9-.3 1.6-.8 2.3-1.5.7-.7 1.2-1.4 1.5-2.3.3-.8.5-1.8.6-3.1.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.3-.6-3.1a4.6 4.6 0 00-1.5-2.3c-.7-.7-1.4-1.2-2.3-1.5C19.4.3 18.4.1 17.1 0 15.8 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
+              </span>
+              <div>
+                <span class="host-platform__num">9.2M+</span>
+                <span class="host-platform__name">Instagram</span>
+              </div>
+            </div>
+            <div class="host-platform">
+              <span class="host-platform__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.3 0L0 4.3v15.4h5.7V24l4.3-4.3h3.4L21.4 12V0H4.3zm15.4 11.4l-3.4 3.4h-3.4l-3 3v-3H5.7V1.7h14v9.7zm-3.4-6h-1.7v5.2h1.7V5.4zm-4.6 0h-1.7v5.2h1.7V5.4z"/></svg>
+              </span>
+              <div>
+                <span class="host-platform__num">847K+</span>
+                <span class="host-platform__name">Twitch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FEATURED CREATORS                             -->
+  <!-- ============================================ -->
+  <section id="creators" class="section section--charcoal creators">
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">The Lineup</span>
+        <h2 class="section__title">Featured<br><span class="text--foil">Creators</span></h2>
+        <p class="section__subtitle">A taste of the kind of names walking the carpet. Final 2026 lineup drops with FunnyMike's announcement trailer in June.</p>
+      </div>
+
+      <div class="creators__grid">
+        <div class="creator-card reveal">
+          <div class="creator-card__image">
+            <img src="images/jasontheween.webp" alt="JasonTheWeen">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">JasonTheWeen</h3>
+            <span class="creator-card__handle">@jasontheween</span>
+            <span class="creator-card__reach">5M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">Streaming</span>
+            <span class="creator-card__tag">Just Chatting</span>
+          </div>
+        </div>
+
+        <div class="creator-card reveal reveal--delay-1">
+          <div class="creator-card__image">
+            <img src="images/david-dobrik.jpg" alt="David Dobrik">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">David Dobrik</h3>
+            <span class="creator-card__handle">@daviddobrik</span>
+            <span class="creator-card__reach">36M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">Vlog</span>
+            <span class="creator-card__tag">Entertainment</span>
+          </div>
+        </div>
+
+        <div class="creator-card reveal reveal--delay-2">
+          <div class="creator-card__image">
+            <img src="images/ddg.jpg" alt="DDG">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">DDG</h3>
+            <span class="creator-card__handle">@ddg</span>
+            <span class="creator-card__reach">15M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">Music</span>
+            <span class="creator-card__tag">Streaming</span>
+          </div>
+        </div>
+
+        <div class="creator-card reveal reveal--delay-3">
+          <div class="creator-card__image">
+            <img src="images/wendyortiz.jpg" alt="Wendy Ortiz">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">Wendy Ortiz</h3>
+            <span class="creator-card__handle">@wendolynortizz</span>
+            <span class="creator-card__reach">6.6M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">IRL</span>
+            <span class="creator-card__tag">Lifestyle</span>
+          </div>
+        </div>
+
+        <div class="creator-card reveal reveal--delay-4">
+          <div class="creator-card__image">
+            <img src="images/india-love.png" alt="India Love">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">India Love</h3>
+            <span class="creator-card__handle">@indialove</span>
+            <span class="creator-card__reach">8.0M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">Lifestyle</span>
+            <span class="creator-card__tag">Beauty</span>
+          </div>
+        </div>
+
+        <div class="creator-card reveal reveal--delay-5">
+          <div class="creator-card__image">
+            <img src="images/sketch.png" alt="Sketch">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">Sketch</h3>
+            <span class="creator-card__handle">@thesketchreal</span>
+            <span class="creator-card__reach">7.5M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">Gaming</span>
+            <span class="creator-card__tag">Comedy</span>
+          </div>
+        </div>
+
+        <div class="creator-card reveal">
+          <div class="creator-card__image">
+            <img src="images/yonna-jay.png" alt="Yonna Jay">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">Yonna Jay</h3>
+            <span class="creator-card__handle">@yonna.jay</span>
+            <span class="creator-card__reach">5.7M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">Fashion</span>
+            <span class="creator-card__tag">Comedy</span>
+          </div>
+        </div>
+
+        <div class="creator-card reveal reveal--delay-1">
+          <div class="creator-card__image">
+            <img src="images/lydia-violet.webp" alt="Lydia Violet">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">Lydia Violet</h3>
+            <span class="creator-card__handle">@lydiaviolet</span>
+            <span class="creator-card__reach">2.4M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">Gaming</span>
+            <span class="creator-card__tag">Comedy</span>
+          </div>
+        </div>
+
+        <div class="creator-card reveal reveal--delay-2">
+          <div class="creator-card__image">
+            <img src="images/n3on.webp" alt="N3on">
+          </div>
+          <div class="creator-card__info">
+            <h3 class="creator-card__name">N3on</h3>
+            <span class="creator-card__handle">@n3on</span>
+            <span class="creator-card__reach">2M+ followers</span>
+          </div>
+          <div class="creator-card__tags">
+            <span class="creator-card__tag">IRL</span>
+            <span class="creator-card__tag">Streaming</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="creators__note reveal">
+        <p><span class="text--script">and a hundred more</span> — the full 2026 roster drops with the trailer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SPONSORSHIP TIERS                             -->
+  <!-- ============================================ -->
+  <section id="sponsorship" class="section section--dark sponsorship">
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Partnership Opportunities</span>
+        <h2 class="section__title">Three Ways To<br><span class="text--foil">Own The Night</span></h2>
+        <p class="section__subtitle">From a single sponsored segment to title-partner naming rights across every channel — pick the level of cultural takeover that fits the ambition.</p>
+      </div>
+
+      <div class="sponsorship__grid">
+        <!-- PROMGOER (entry) -->
+        <div class="tier-card tier-card--promgoer reveal">
+          <div class="tier-card__header">
+            <svg class="tier-card__crown" viewBox="0 0 48 48" fill="currentColor">
+              <path d="M8 22l4-10 6 6 6-10 6 10 6-6 4 10v8H8v-8z" fill-opacity="0.5"/>
+              <path d="M8 30h32v4H8z"/>
+            </svg>
+            <span class="tier-card__level">Entry</span>
+            <span class="tier-card__name">Promgoer</span>
+            <span class="tier-card__sub">brand partner</span>
+          </div>
+          <div class="tier-card__body">
+            <ul class="tier-card__list">
+              <li class="tier-card__item tier-card__item--included">Logo on stream overlays &amp; event backdrops</li>
+              <li class="tier-card__item tier-card__item--included">Brand mention in FunnyMike's promo trailer</li>
+              <li class="tier-card__item tier-card__item--included">Logo placement on promotional materials</li>
+              <li class="tier-card__item tier-card__item--included">Brand presence in post-event photo &amp; video gallery</li>
+              <li class="tier-card__item tier-card__item--included">Mention in event marketing emails</li>
+              <li class="tier-card__item">Sponsored on-stream segment</li>
+              <li class="tier-card__item">Interactive prom element</li>
+              <li class="tier-card__item">Naming rights</li>
+            </ul>
+          </div>
+          <div class="tier-card__footer">
+            <a href="mailto:if@fixated.com?cc=dk@fixated.com&subject=Streamer%20Prom%202026%20-%20Promgoer%20Tier" class="btn btn--outline">
+              <span class="btn__bg"></span>
+              <span>Get Started</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROM COURT (mid) -->
+        <div class="tier-card tier-card--court reveal reveal--delay-1">
+          <div class="tier-card__badge">Most Popular</div>
+          <div class="tier-card__header">
+            <svg class="tier-card__crown" viewBox="0 0 48 48" fill="currentColor">
+              <path d="M8 22l4-10 6 6 6-10 6 10 6-6 4 10v8H8v-8z"/>
+              <path d="M8 30h32v4H8z" fill-opacity="0.6"/>
+              <circle cx="12" cy="12" r="2"/>
+              <circle cx="24" cy="6" r="2"/>
+              <circle cx="36" cy="12" r="2"/>
+            </svg>
+            <span class="tier-card__level">Featured</span>
+            <span class="tier-card__name">Prom Court</span>
+            <span class="tier-card__sub">sponsored segment</span>
+          </div>
+          <div class="tier-card__body">
+            <ul class="tier-card__list">
+              <li class="tier-card__item tier-card__item--included">Everything in Promgoer, plus:</li>
+              <li class="tier-card__item tier-card__item--included">Dedicated sponsored segment (e.g. "Best Dressed by [Brand]")</li>
+              <li class="tier-card__item tier-card__item--included">Verbal shoutouts from FunnyMike &amp; attending creators</li>
+              <li class="tier-card__item tier-card__item--included">Custom branded photo booth (IRL or virtual)</li>
+              <li class="tier-card__item tier-card__item--included">Live hashtag campaign &amp; branded filter</li>
+              <li class="tier-card__item tier-card__item--included">Product placement across the broadcast</li>
+              <li class="tier-card__item tier-card__item--included">Featured in post-event highlight reel</li>
+              <li class="tier-card__item">Naming rights</li>
+            </ul>
+          </div>
+          <div class="tier-card__footer">
+            <a href="mailto:if@fixated.com?cc=dk@fixated.com&subject=Streamer%20Prom%202026%20-%20Prom%20Court%20Tier" class="btn btn--pink">
+              <span class="btn__bg"></span>
+              <span>Let's Talk</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROM KING (premium) -->
+        <div class="tier-card tier-card--king reveal reveal--delay-2">
+          <div class="tier-card__badge">Title Partner</div>
+          <div class="tier-card__header">
+            <svg class="tier-card__crown" viewBox="0 0 48 48" fill="currentColor">
+              <path d="M6 22l4-10 6 8 8-12 8 12 6-8 4 10v10H6V22z"/>
+              <path d="M6 32h36v4H6z" fill-opacity="0.7"/>
+              <circle cx="10" cy="10" r="2.5"/>
+              <circle cx="24" cy="4" r="3"/>
+              <circle cx="38" cy="10" r="2.5"/>
+              <circle cx="24" cy="26" r="2" fill="#7a1230"/>
+            </svg>
+            <span class="tier-card__level">Premium</span>
+            <span class="tier-card__name">Prom King</span>
+            <span class="tier-card__sub">naming sponsor</span>
+          </div>
+          <div class="tier-card__body">
+            <ul class="tier-card__list">
+              <li class="tier-card__item tier-card__item--included">Everything in Prom Court, plus:</li>
+              <li class="tier-card__item tier-card__item--included">Title naming — "FunnyMike's Streamer Prom presented by [Brand]"</li>
+              <li class="tier-card__item tier-card__item--included">King &amp; Queen voting sponsored &amp; branded prize delivery</li>
+              <li class="tier-card__item tier-card__item--included">Maximum signage across event venue &amp; all stream overlays</li>
+              <li class="tier-card__item tier-card__item--included">Co-hosted RSVP page with full data share</li>
+              <li class="tier-card__item tier-card__item--included">Branded content package (recap, highlights, sizzle reel)</li>
+              <li class="tier-card__item tier-card__item--included">Full usage rights on all event content</li>
+              <li class="tier-card__item tier-card__item--included">Post-event analytics &amp; performance report</li>
+              <li class="tier-card__item tier-card__item--included">Right of first refusal on Streamer Prom 2027</li>
+            </ul>
+          </div>
+          <div class="tier-card__footer">
+            <a href="mailto:if@fixated.com?cc=dk@fixated.com&subject=Streamer%20Prom%202026%20-%20Prom%20King%20Title%20Partner" class="btn btn--primary">
+              <span class="btn__bg"></span>
+              <span>Claim The Crown</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SOCIAL ACHIEVEMENTS                           -->
+  <!-- ============================================ -->
+  <section class="section section--charcoal social">
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">What 2025 Achieved</span>
+        <h2 class="section__title">Off-Stream<br><span class="text--script text--pink">it was everywhere.</span></h2>
+        <p class="section__subtitle">A title sponsor doesn't just get the broadcast — they get the cultural aftershock. Here's how last year's title partner did across social.</p>
+      </div>
+
+      <div class="social__grid">
+        <div class="social-card social-card--ig reveal">
+          <div class="social-card__icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2a3.7 3.7 0 01-.9 1.4c-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9a3.7 3.7 0 01-.9-1.4c-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zM12 0c-3.3 0-3.7 0-5 .1S4.8.3 4 .6c-.9.3-1.6.8-2.3 1.5C1 2.8.5 3.5.2 4.4-.1 5.2-.3 6.2-.3 7.5-.4 8.8-.4 9.2-.4 12.5s0 3.7.1 5C-.2 18.8 0 19.8.3 20.6c.3.9.8 1.6 1.5 2.3.7.7 1.4 1.2 2.3 1.5.8.3 1.8.5 3.1.6 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.3-.3 3.1-.6.9-.3 1.6-.8 2.3-1.5.7-.7 1.2-1.4 1.5-2.3.3-.8.5-1.8.6-3.1.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.3-.6-3.1a4.6 4.6 0 00-1.5-2.3c-.7-.7-1.4-1.2-2.3-1.5C19.4.3 18.4.1 17.1 0 15.8 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
+          </div>
+          <span class="social-card__platform">Instagram</span>
+          <h3 class="social-card__title">Most-engaged <strong>Popeyes post</strong> of <strong>all time</strong></h3>
+          <div class="social-card__stats">
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">3.7M+</span>
+              <span class="social-card__stat-label">Views</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">234K</span>
+              <span class="social-card__stat-label">Likes</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">9.8K</span>
+              <span class="social-card__stat-label">Shares</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">1.6K</span>
+              <span class="social-card__stat-label">Comments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-card social-card--tt reveal reveal--delay-1">
+          <div class="social-card__icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M19.6 6.3a4.8 4.8 0 01-3.2-1.4 4.8 4.8 0 01-1.4-3.1h-3v13a2.7 2.7 0 11-2.7-2.7c.3 0 .5 0 .8.1V9.2a5.7 5.7 0 105.8 5.7V9a8 8 0 003.7.9V6.3z"/></svg>
+          </div>
+          <span class="social-card__platform">TikTok</span>
+          <h3 class="social-card__title">Just <strong>2 official posts</strong> — massive returns</h3>
+          <div class="social-card__stats">
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">190K</span>
+              <span class="social-card__stat-label">Views</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">33K</span>
+              <span class="social-card__stat-label">Likes</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">265</span>
+              <span class="social-card__stat-label">Comments</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">17%</span>
+              <span class="social-card__stat-label">Engagement Rate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-card social-card--x reveal reveal--delay-2">
+          <div class="social-card__icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg>
+          </div>
+          <span class="social-card__platform">X (Twitter)</span>
+          <h3 class="social-card__title"><strong>#1 trending</strong> event on X</h3>
+          <div class="social-card__stats">
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">173K</span>
+              <span class="social-card__stat-label">Likes (Single Post)</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">120</span>
+              <span class="social-card__stat-label">Reposts</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">#1</span>
+              <span class="social-card__stat-label">Trending Topic</span>
+            </div>
+            <div class="social-card__stat">
+              <span class="social-card__stat-num">123M+</span>
+              <span class="social-card__stat-label">48hr Total Reach</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- BIG DAY — SAVE THE DATE                       -->
+  <!-- ============================================ -->
+  <section id="date" class="section bigday">
+    <div class="bigday__bg"></div>
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="bigday__content reveal">
+        <span class="bigday__overline">save the date</span>
+        <h2 class="bigday__date">
+          <span class="bigday__month text--foil">July</span>
+          <span class="bigday__day text--holo">17</span>
+          <span class="bigday__year">2026</span>
+        </h2>
+        <p class="bigday__script">the night you can't miss.</p>
+
+        <div class="bigday__details">
+          <div class="bigday__detail">
+            <svg class="bigday__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.3 0L0 4.3v15.4h5.7V24l4.3-4.3h3.4L21.4 12V0H4.3z" fill="currentColor"/>
+            </svg>
+            <div class="bigday__detail-text">
+              <span class="bigday__detail-label">Platform</span>
+              <span class="bigday__detail-value">Live On Twitch</span>
+            </div>
+          </div>
+          <div class="bigday__detail">
+            <svg class="bigday__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+            <div class="bigday__detail-text">
+              <span class="bigday__detail-label">Expected Audience</span>
+              <span class="bigday__detail-value">1M+ Concurrent</span>
+            </div>
+          </div>
+          <div class="bigday__detail">
+            <svg class="bigday__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L15 8h7l-5.5 4.5L18 19l-6-4-6 4 1.5-6.5L2 8h7z"/>
+            </svg>
+            <div class="bigday__detail-text">
+              <span class="bigday__detail-label">Roster</span>
+              <span class="bigday__detail-value">100+ Top Creators</span>
+            </div>
+          </div>
+          <div class="bigday__detail">
+            <svg class="bigday__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <path d="M3 10h18M8 2v4M16 2v4"/>
+            </svg>
+            <div class="bigday__detail-text">
+              <span class="bigday__detail-label">Sponsor Lock</span>
+              <span class="bigday__detail-value">By May 30, 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FINAL CTA                                     -->
+  <!-- ============================================ -->
+  <section id="contact" class="section section--darker cta">
+    <div class="cta__grid"></div>
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="cta__content reveal">
+        <span class="section__eyebrow">The Crown Is Up For Grabs</span>
+        <h2 class="section__title">Ready To<br><span class="text--foil">Own Round Two?</span></h2>
+        <p class="cta__text">There's one title sponsor slot. It will be claimed. The brand that took it last year did over 123M impressions in 48 hours and unlocked their most-engaged post in company history. Let's talk about what your version of that looks like.</p>
+        <a href="mailto:if@fixated.com?cc=dk@fixated.com&subject=Streamer%20Prom%202026%20Partnership%20Inquiry" class="btn btn--primary btn--large">
+          <span class="btn__bg"></span>
+          <span>Start The Conversation</span>
+        </a>
+
+        <div class="cta__contact">
+          <span><a href="mailto:if@fixated.com">if@fixated.com</a></span>
+          <span><a href="mailto:dk@fixated.com">dk@fixated.com</a></span>
+          <span>Stay Fixated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER                                        -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="section__noise"></div>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">STREAMER PROM</span>
+          <span class="footer__sub">An Event Production By</span>
+          <div class="footer__producers">
+            <span class="footer__funnymike">FUNNYMIKE</span>
+            <span class="footer__producer-divider">×</span>
+            <a href="https://fixated.com" target="_blank" rel="noopener" class="footer__producer-link">
+              <img src="images/fixated-logo.svg" alt="Fixated" class="footer__producer-logo">
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <a href="#about">The Event</a>
+          <a href="#stats">2025 Recap</a>
+          <a href="#host">Host</a>
+          <a href="#sponsorship">Partner</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__copy">&copy; 2026 Fixated &middot; Stay Fixated</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
