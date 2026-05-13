@@ -2212,15 +2212,7 @@
   50%       { box-shadow: 0 0 32px rgba(255,45,85,0.85), 0 4px 14px rgba(0,0,0,0.35); }
 }
 
-@media (max-width: 768px) {
-  .nav__watch-badge {
-    padding: 0.3rem 0.6rem 0.3rem 0.5rem;
-    font-size: 0.7rem;
-    margin-right: 0.25rem;
-  }
-  .nav__watch-num { font-size: 0.85rem; }
-  .nav__watch-label { display: none; }
-}
+
 
 /* ─── TV Comparison Block ────────────────────────────────────── */
 .stats__tv-compare {
@@ -2398,4 +2390,18 @@
   align-items: center;
   gap: 0.15rem;
   text-align: center;
+}
+
+/* ─── Hero Watch Hours Metric (pink + glow) ─────────────────── */
+.hero__metric--watch {
+  position: relative;
+}
+.hero__metric-num--watch {
+  color: var(--pink) !important;
+  text-shadow: 0 0 20px rgba(255,59,138,0.7), 0 0 40px rgba(255,59,138,0.35);
+  animation: watchGlow 2.2s ease-in-out infinite;
+}
+@keyframes watchGlow {
+  0%, 100% { text-shadow: 0 0 18px rgba(255,59,138,0.65), 0 0 36px rgba(255,59,138,0.3); }
+  50%       { text-shadow: 0 0 30px rgba(255,59,138,0.95), 0 0 60px rgba(255,59,138,0.5); }
 }
