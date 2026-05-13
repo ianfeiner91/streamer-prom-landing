@@ -29,4 +29,4 @@ Configured for Netlify via `netlify.toml`. Push to `main` and Netlify will publi
 
 ## Partnership inquiries
 
-if@fixated.com · dk@fixated.com
+brandpartnerships@fixated.com
