@@ -2312,3 +2312,84 @@
   max-width: 520px;
   margin: 0 auto;
 }
+
+/* ─── TV Compare — Winner Banner ─────────────────────────────── */
+.stats__tv-winner {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.stats__tv-winner-show {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 0.35rem;
+}
+.stats__tv-winner-num {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.stats__tv-winner-unit {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.4rem;
+}
+
+/* ─── TV Compare — VS Pills ──────────────────────────────────── */
+.stats__tv-vs-pill {
+  display: inline-block;
+  background: rgba(255,45,85,0.15);
+  border: 1px solid rgba(255,45,85,0.4);
+  color: #ff2d55;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+}
+.stats__tv-network {
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+.stats__tv-callout {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.65);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+.stats__tv-callout strong {
+  color: #fff;
+}
+.stats__tv-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+.stats__tv-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 1rem;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  text-align: center;
+}
