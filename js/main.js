@@ -230,24 +230,32 @@
   }
 
   // ============================================
-  // RECAP VIDEO PLAYER
+  // RECAP VIDEO PLAYER (livestream window)
   // ============================================
   const recapVideo = document.getElementById('recap-video');
   const recapPlayBtn = document.getElementById('recap-play-btn');
+  const livestreamTime = document.getElementById('livestream-time');
+  const livestreamTotal = document.querySelector('.livestream__total');
+
+  function formatTime(s) {
+    if (!isFinite(s)) return '0:00';
+    const m = Math.floor(s / 60);
+    const sec = Math.floor(s % 60);
+    return `${m}:${sec.toString().padStart(2, '0')}`;
+  }
+
   if (recapVideo && recapPlayBtn) {
     recapPlayBtn.addEventListener('click', () => {
       recapVideo.muted = false;
       recapVideo.play().then(() => {
         recapPlayBtn.classList.add('is-hidden');
       }).catch(() => {
-        // Autoplay blocked — try muted
         recapVideo.muted = true;
         recapVideo.play();
         recapPlayBtn.classList.add('is-hidden');
       });
     });
 
-    // Toggle play state on video click
     recapVideo.addEventListener('click', () => {
       if (recapVideo.paused) {
         recapVideo.play();
@@ -255,6 +263,18 @@
       } else {
         recapVideo.pause();
         recapPlayBtn.classList.remove('is-hidden');
+      }
+    });
+
+    recapVideo.addEventListener('loadedmetadata', () => {
+      if (livestreamTotal && isFinite(recapVideo.duration)) {
+        livestreamTotal.textContent = '/ ' + formatTime(recapVideo.duration);
+      }
+    });
+
+    recapVideo.addEventListener('timeupdate', () => {
+      if (livestreamTime) {
+        livestreamTime.textContent = formatTime(recapVideo.currentTime);
       }
     });
   }

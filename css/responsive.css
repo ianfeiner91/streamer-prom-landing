@@ -171,6 +171,34 @@
     height: 22px;
   }
 
+  /* Livestream window — compact mobile layout */
+  .livestream__topbar,
+  .livestream__bottombar {
+    padding: 0.55rem 0.7rem;
+    font-size: 0.65rem;
+    gap: 0.5rem;
+  }
+  .livestream__channel .livestream__title { display: none; }
+  .livestream__channel .livestream__sep { display: none; }
+  .livestream__channel { font-size: 0.7rem; gap: 0.4rem; justify-content: flex-start; }
+  .livestream__live {
+    font-size: 0.6rem;
+    padding: 0.25em 0.55em;
+    letter-spacing: 0.15em;
+  }
+  .livestream__live-dot { width: 6px; height: 6px; }
+  .livestream__viewers { font-size: 0.7rem; gap: 0.3rem; }
+  .livestream__corner-tag {
+    top: 0.6rem;
+    right: 0.6rem;
+    font-size: 0.6rem;
+    padding: 0.3em 0.55em;
+  }
+  .livestream__play-btn .play-circle {
+    width: 60px;
+    height: 60px;
+  }
+
   .amp__big {
     grid-template-columns: repeat(2, 1fr);
   }

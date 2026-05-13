@@ -382,17 +382,43 @@
           </a>
         </div>
         <div class="reveal reveal--delay-2">
-          <div class="iphone-frame">
-            <div class="iphone-frame__notch"><div class="iphone-frame__camera"></div></div>
-            <div class="iphone-frame__screen">
-              <video class="iphone-frame__video" id="recap-video" src="images/recap.mp4" playsinline muted loop preload="metadata"></video>
-              <button class="iphone-frame__play-btn" id="recap-play-btn" aria-label="Play recap">
+          <div class="livestream">
+            <div class="livestream__topbar">
+              <div class="livestream__live">
+                <span class="livestream__live-dot"></span>
+                <span class="livestream__live-text">LIVE</span>
+              </div>
+              <div class="livestream__channel">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.3 0L0 4.3v15.4h5.7V24l4.3-4.3h3.4L21.4 12V0H4.3zm15.4 11.4l-3.4 3.4h-3.4l-3 3v-3H5.7V1.7h14v9.7zm-3.4-6h-1.7v5.2h1.7V5.4zm-4.6 0h-1.7v5.2h1.7V5.4z"/></svg>
+                <span>funnymike</span>
+                <span class="livestream__sep">/</span>
+                <span class="livestream__title">streamer prom 2025</span>
+              </div>
+              <div class="livestream__viewers">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <span class="livestream__viewers-num">218,742</span>
+              </div>
+            </div>
+            <div class="livestream__screen">
+              <video class="livestream__video" id="recap-video" src="images/recap.mp4" playsinline muted loop preload="metadata"></video>
+              <button class="livestream__play-btn" id="recap-play-btn" aria-label="Play recap">
                 <div class="play-circle">
-                  <svg viewBox="0 0 24 24" width="28" height="28" fill="#07050c"><path d="M8 5v14l11-7z"/></svg>
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="#07050c" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
                 </div>
               </button>
+              <div class="livestream__corner-tag">2025 RECAP</div>
             </div>
-            <div class="iphone-frame__home-bar"></div>
+            <div class="livestream__bottombar">
+              <div class="livestream__bottom-left">
+                <span class="livestream__quality">1080p60</span>
+                <span class="livestream__sep">•</span>
+                <span class="livestream__category">Just Chatting · Prom</span>
+              </div>
+              <div class="livestream__bottom-right">
+                <span class="livestream__time" id="livestream-time">0:00</span>
+                <span class="livestream__total">/ 0:47</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
