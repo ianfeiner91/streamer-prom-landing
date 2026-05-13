@@ -2179,3 +2179,136 @@
   filter: drop-shadow(0 0 12px var(--gold-glow));
   animation: divider-pulse 3s ease-in-out infinite;
 }
+
+/* ─── Nav Watch Hours Badge ─────────────────────────────────── */
+.nav__watch-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #ff2d55 0%, #ff6b35 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.35rem 0.85rem 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  box-shadow: 0 0 18px rgba(255,45,85,0.55), 0 2px 8px rgba(0,0,0,0.3);
+  animation: watchBadgePulse 2.4s ease-in-out infinite;
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+.nav__watch-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 28px rgba(255,45,85,0.75), 0 4px 12px rgba(0,0,0,0.35);
+}
+.nav__watch-icon { font-size: 0.7rem; opacity: 0.9; }
+.nav__watch-num { font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; }
+.nav__watch-label { font-size: 0.65rem; font-weight: 700; opacity: 0.92; letter-spacing: 0.05em; }
+
+@keyframes watchBadgePulse {
+  0%, 100% { box-shadow: 0 0 18px rgba(255,45,85,0.55), 0 2px 8px rgba(0,0,0,0.3); }
+  50%       { box-shadow: 0 0 32px rgba(255,45,85,0.85), 0 4px 14px rgba(0,0,0,0.35); }
+}
+
+@media (max-width: 768px) {
+  .nav__watch-badge { display: none; }
+}
+
+/* ─── TV Comparison Block ────────────────────────────────────── */
+.stats__tv-compare {
+  margin: 3.5rem 0 2rem;
+}
+.stats__tv-inner {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,45,85,0.25);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.stats__tv-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center top, rgba(255,45,85,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.stats__tv-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ff2d55;
+  margin-bottom: 1.75rem;
+}
+.stats__tv-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.stats__tv-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  min-width: 160px;
+}
+.stats__tv-item--winner .stats__tv-num {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.stats__tv-show {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.25rem;
+}
+.stats__tv-item--winner .stats__tv-show {
+  color: rgba(255,255,255,0.9);
+}
+.stats__tv-num {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.35);
+  line-height: 1;
+}
+.stats__tv-unit {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.45);
+}
+.stats__tv-item--winner .stats__tv-unit {
+  color: rgba(255,255,255,0.75);
+}
+.stats__tv-note {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.3);
+  margin-top: 0.25rem;
+}
+.stats__tv-item--winner .stats__tv-note {
+  color: rgba(255,255,255,0.55);
+}
+.stats__tv-vs {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.1em;
+}
+.stats__tv-caption {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto;
+}
