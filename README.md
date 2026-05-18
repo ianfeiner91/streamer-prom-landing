@@ -2,7 +2,7 @@
 
 Landing page for **FunnyMike's Streamer Prom 2026**, presented by FunnyMike × Fixated.
 
-Live event: **July 17, 2026** — live on Twitch with 100+ top-tier creators.
+Live event: **August 8, 2026** — live on Twitch with 100+ top-tier creators.
 
 ## Stack
 
