@@ -1922,6 +1922,97 @@
   font-weight: 600;
 }
 
+/* ---- SPONSOR PROOF — business results banner ---- */
+.sponsor-proof {
+  margin-top: var(--gap);
+  background:
+    linear-gradient(135deg, rgba(230, 194, 112, 0.12) 0%, rgba(255, 59, 138, 0.06) 100%),
+    var(--charcoal);
+  border: 1px solid rgba(230, 194, 112, 0.28);
+  padding: clamp(2rem, 4vw, 3.25rem);
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.sponsor-proof::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: -8%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, var(--gold-glow), transparent 70%);
+  opacity: 0.28;
+  pointer-events: none;
+}
+.sponsor-proof__label {
+  position: relative;
+  z-index: 1;
+}
+.sponsor-proof__eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--pink);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.sponsor-proof__eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--pink);
+}
+.sponsor-proof__lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  line-height: 1.12;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.sponsor-proof__lead strong {
+  font-weight: 400;
+  background: linear-gradient(180deg, #fff3c4 0%, var(--gold) 55%, var(--gold-deep) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.sponsor-proof__stats {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: clamp(1rem, 2.5vw, 2.25rem);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.sponsor-proof__divider {
+  width: 1px;
+  height: 90px;
+  background: linear-gradient(to bottom, transparent, rgba(230, 194, 112, 0.45), transparent);
+}
+.sponsor-proof__num {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+  line-height: 0.95;
+  display: block;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
+}
+.sponsor-proof__stat-label {
+  font-size: 0.85rem;
+  color: var(--gray-light);
+  line-height: 1.55;
+}
+
 /* ============================================
    THE BIG MOMENT — DATE / SAVE THE DATE
    ============================================ */

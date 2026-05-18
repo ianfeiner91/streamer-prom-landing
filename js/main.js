@@ -188,6 +188,7 @@
   setupStatObserver('.stats__grid', '.stat-card__number');
   setupStatObserver('.amp__big', '.amp-stat__num');
   setupStatObserver('.hero__metrics', '.hero__metric-num');
+  setupStatObserver('.sponsor-proof__stats', '.sponsor-proof__num');
 
   // Animate hero metric numbers separately on load (slight delay)
   setTimeout(() => {
