@@ -1,0 +1,4 @@
+Contact: mailto:brandpartnerships@fixated.com
+Expires: 2027-06-01T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://streamerprom.live/.well-known/security.txt
