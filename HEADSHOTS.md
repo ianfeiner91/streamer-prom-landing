@@ -1,6 +1,8 @@
 # Headshot Drop-In Guide
 
-Drop a square-ish JPG at the exact path below and the card picks it up automatically — no code changes needed (same for venue photos: `images/venue/venue-1.jpg` track, `venue-2.jpg` arcade, `venue-3.jpg` laser tag/VR).
+Drop a square-ish JPG at the exact path below and the card picks it up automatically — no code changes needed (same for venue photos: `images/venue/venue-1.jpg` track, `venue-2.jpg` arcade, `venue-3.jpg` laser tag/VR — still placeholders).
+
+**Status:** all 49 headshots are populated from each creator's public profile avatar, EXCEPT Almighty Jay (his IG pfp is a solid black square, so his card keeps the styled placeholder). To swap any headshot for a better photo, just overwrite the file — same name, same path.
 
 | Creator | File path |
 |---|---|
