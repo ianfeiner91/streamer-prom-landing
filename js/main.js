@@ -378,4 +378,16 @@
     });
   });
 
+  // ============================================
+  // ROSTER / VENUE IMAGE FALLBACK
+  // Headshot & venue photo files may not exist yet —
+  // hide broken <img> so the styled placeholder shows.
+  // Drop a file at the referenced path and it appears.
+  // ============================================
+  document.querySelectorAll('.roster-card__img, .venue-photo__img').forEach(img => {
+    const hide = () => img.classList.add('is-missing');
+    img.addEventListener('error', hide);
+    if (img.complete && img.naturalWidth === 0) hide();
+  });
+
 })();

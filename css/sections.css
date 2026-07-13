@@ -2496,3 +2496,285 @@
   0%, 100% { text-shadow: 0 0 18px rgba(255,59,138,0.65), 0 0 36px rgba(255,59,138,0.3); }
   50%       { text-shadow: 0 0 30px rgba(255,59,138,0.95), 0 0 60px rgba(255,59,138,0.5); }
 }
+
+/* ============================================
+   FULL ROSTER GRID (official 2026 talent list)
+   ============================================ */
+.roster {
+  margin-top: 4.5rem;
+  position: relative;
+  z-index: 2;
+}
+.roster__header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+.roster__title {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.roster__count {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pink);
+  border: 1px solid rgba(255, 59, 138, 0.35);
+  background: rgba(255, 59, 138, 0.07);
+  padding: 0.35em 0.9em;
+}
+.roster__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(0.75rem, 1.4vw, 1.15rem);
+}
+.roster-card {
+  background: var(--charcoal);
+  border: 1px solid rgba(230, 194, 112, 0.1);
+  padding: 0.85rem 0.85rem 1rem;
+  transition: all 0.35s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+.roster-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(230, 194, 112, 0.35);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4), 0 0 24px rgba(230, 194, 112, 0.08);
+}
+.roster-card__avatar {
+  position: relative;
+  aspect-ratio: 1;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Gradient placeholder variants — shown until a headshot file exists */
+.roster-card__avatar--v1 { background: linear-gradient(140deg, var(--wine), var(--gold-deep)); }
+.roster-card__avatar--v2 { background: linear-gradient(140deg, var(--midnight), var(--pink)); }
+.roster-card__avatar--v3 { background: linear-gradient(140deg, var(--twitch), var(--burgundy)); }
+.roster-card__avatar--v4 { background: linear-gradient(140deg, var(--gray-dark), var(--gold)); }
+.roster-card__avatar--v5 { background: linear-gradient(140deg, var(--burgundy), var(--teal)); }
+.roster-card__avatar--v6 { background: linear-gradient(140deg, var(--slate), var(--pink-bright)); }
+.roster-card__initials {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 2.6vw, 2.5rem);
+  color: rgba(248, 243, 232, 0.9);
+  letter-spacing: 0.06em;
+  text-shadow: 0 2px 14px rgba(7, 5, 12, 0.5);
+}
+.roster-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
+}
+.roster-card__img.is-missing { display: none; }
+.roster-card:hover .roster-card__img { transform: scale(1.05); }
+.roster-card__name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 0.15rem;
+}
+.roster-card__handle {
+  font-size: 0.68rem;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.03em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.roster-card__reach {
+  font-size: 0.6rem;
+  color: var(--gray-light);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* ============================================
+   10X BANNER (round-two potential)
+   ============================================ */
+.tenx {
+  margin-top: 3.5rem;
+  border: 1px solid rgba(255, 59, 138, 0.28);
+  background:
+    radial-gradient(ellipse at 15% 50%, rgba(255, 59, 138, 0.1), transparent 55%),
+    linear-gradient(135deg, rgba(145, 70, 255, 0.06), rgba(7, 5, 12, 0.4));
+  padding: clamp(2rem, 4vw, 3.25rem);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.tenx__number {
+  font-family: var(--font-display);
+  font-size: clamp(5.5rem, 11vw, 10rem);
+  line-height: 0.85;
+  white-space: nowrap;
+}
+.tenx__title {
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.6rem;
+}
+.tenx__text {
+  color: var(--gray-light);
+  max-width: 56ch;
+}
+.tenx__compare {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.4rem;
+}
+.tenx-chip {
+  border: 1px solid rgba(230, 194, 112, 0.18);
+  background: rgba(7, 5, 12, 0.45);
+  padding: 0.7rem 1rem;
+  min-width: 150px;
+}
+.tenx-chip__label {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  margin-bottom: 0.25rem;
+}
+.tenx-chip__vals {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+.tenx-chip__arrow { color: var(--pink); padding: 0 0.3em; }
+.tenx-chip__next { color: var(--gold-bright); }
+
+/* ============================================
+   VENUE — ANDRETTI KATY
+   ============================================ */
+.venue__layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(2rem, 4.5vw, 3.75rem);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.venue__kicker {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pink);
+  border: 1px solid rgba(255, 59, 138, 0.3);
+  background: rgba(255, 59, 138, 0.06);
+  padding: 0.35em 0.9em;
+  margin-bottom: 1.1rem;
+}
+.venue__text {
+  color: var(--gray-light);
+  margin-bottom: 1rem;
+}
+.venue__text strong { color: var(--off-white); }
+.venue__address {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--champagne);
+}
+.venue__address svg { flex-shrink: 0; color: var(--gold); }
+.venue__facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+}
+.venue-fact {
+  border: 1px solid rgba(230, 194, 112, 0.12);
+  background: var(--charcoal);
+  padding: 1rem 1.1rem;
+}
+.venue-fact__num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.venue-fact__label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+}
+.venue__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(0.75rem, 1.4vw, 1rem);
+}
+.venue-photo {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid rgba(230, 194, 112, 0.14);
+  /* Checkered-flag placeholder shows until a photo file exists */
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(230, 194, 112, 0.12), transparent 65%),
+    repeating-conic-gradient(rgba(230, 194, 112, 0.07) 0% 25%, rgba(7, 5, 12, 0.55) 0% 50%);
+  background-size: 100% 100%, 30px 30px;
+}
+.venue-photo--wide {
+  grid-column: span 2;
+  aspect-ratio: 21 / 9;
+}
+.venue-photo__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
+}
+.venue-photo__img.is-missing { display: none; }
+.venue-photo:hover .venue-photo__img { transform: scale(1.04); }
+.venue-photo__tag {
+  position: absolute;
+  bottom: 0.65rem;
+  left: 0.65rem;
+  z-index: 2;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  background: rgba(7, 5, 12, 0.7);
+  border: 1px solid rgba(230, 194, 112, 0.22);
+  padding: 0.35em 0.8em;
+}

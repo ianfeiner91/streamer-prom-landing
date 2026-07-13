@@ -334,3 +334,27 @@
     display: none !important;
   }
 }
+
+/* ─── Roster / Venue / 10x additions ─────────────────── */
+@media (max-width: 1024px) {
+  .roster__grid { grid-template-columns: repeat(4, 1fr); }
+  .venue__layout { grid-template-columns: 1fr; }
+  .tenx { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+
+@media (max-width: 768px) {
+  .roster__grid { grid-template-columns: repeat(3, 1fr); }
+  .roster-card { padding: 0.7rem 0.7rem 0.85rem; }
+  .venue__facts { grid-template-columns: repeat(2, 1fr); }
+  .tenx__compare { gap: 0.7rem; }
+  .tenx-chip { min-width: 130px; padding: 0.55rem 0.8rem; }
+}
+
+@media (max-width: 480px) {
+  .roster__grid { grid-template-columns: repeat(2, 1fr); }
+  .roster-card__name { font-size: 0.9rem; }
+  .venue__gallery { grid-template-columns: 1fr; }
+  .venue-photo { aspect-ratio: 16 / 9; }
+  .venue-photo--wide { grid-column: auto; }
+  .venue__facts { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+}
